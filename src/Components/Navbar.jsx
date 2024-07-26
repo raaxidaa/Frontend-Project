@@ -7,11 +7,11 @@ const Navbar = () => {
             <div className="left">
             <NavLink to="/" > <img src="public/Logo.png" alt="" /></NavLink>
                 <div className="links">
-                    <NavLink to="/investor" activeClassName="active">For Investor</NavLink>
-                    <NavLink to="/startups" activeClassName="active">For Startups</NavLink>
-                    <NavLink to="/jobs" activeClassName="active" >Find Jobs</NavLink>
-                    <NavLink to="/browsestartups" activeClassName="active">Browse Startups</NavLink>
-                    <NavLink to="/seekfunding" activeClassName="active">Seek Funding</NavLink>
+                    <NavLink to="/investor" activeclassname="active">For Investor</NavLink>
+                    <NavLink to="/startups" activeclassname="active">For Startups</NavLink>
+                    <NavLink to="/jobs" activeclassname="active" >Find Jobs</NavLink>
+                    <NavLink to="/browsestartups" activeclassname="active">Browse Startups</NavLink>
+                    <NavLink to="/seekfunding" activeclassname="active">Seek Funding</NavLink>
                 </div>
             </div>
             <div className="right">
