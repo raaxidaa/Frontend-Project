@@ -1,36 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Investor from './Pages/Investor';
+import Home from './Pages/Home';
 import Startups from './Pages/Startups';
 import Jobs from './Pages/Jobs';
 import BrowseSturtups from './Pages/BrowseSturtups';
 import SeekFunding from './Pages/SeekFunding';
-import Login from './Pages/Login';
-import SignIn from './Pages/SignIn';
+import Investor from './Pages/Investor';
+import './App.css';
+import Footer from './Components/Footer';
 
 const App = () => {
-    return (
-        <Router>
-            <div>
-                <Navbar />
-                <Switch>
-                    <Route path="/" exact component={ Investor} />
-                    <Route path="/startups" component={Startups} />
-                    <Route path="/jobs" component={Jobs} />
-                    <Route path="/browsestartups" component={BrowseSturtups} />
-                    <Route path="/browsestartups" component={BrowseSturtups} />
-                    <Route path='/seekfunding' component={SeekFunding} />
-                    <Route path='/login' component={Login} />
-                    <Route path='/signup' component={SignIn} />
-
-                </Switch>
-            </div>
-        </Router>
-    );
+  return (
+    <div className='main'>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/investor" element={<Investor />} />
+        <Route path="/startups" element={<Startups />} />
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/browsestartups" element={<BrowseSturtups />} />
+        <Route path='/seekfunding' element={<SeekFunding />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
+
 
 
