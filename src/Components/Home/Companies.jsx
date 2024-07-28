@@ -9,7 +9,7 @@ const Companies = () => {
         <div className="see-company">
           <span>Aliquet ipsum id netus eget nibh in. Sed ut.</span>
           <span>See All Company</span>
-          <img src="public/arrow-right.png" alt="" />
+          <img src="/public/arrow-right.png" alt="" />
         </div>
       </div>
       <div className="companies-bottom">
@@ -22,7 +22,7 @@ const Companies = () => {
             <p>{company.description}</p>
             <div className="two-bottom">
               <span>{company.jobs}</span>
-              <img src="public/arrow-right-up.png" alt="" />
+              <img src="/public/arrow-right-up.png" alt="" />
             </div>
           </div>
         ))}

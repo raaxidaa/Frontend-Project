@@ -11,7 +11,7 @@ const Header = () => {
         <span>2886 open positions</span>
         <h1>
           Find your next{' '}
-          <img src="public/Burst-pucker-2.png" alt="" />
+          <img src="/public/Burst-pucker-2.png" alt="" />
           exciting startup job
         </h1>
         <p>
@@ -19,9 +19,9 @@ const Header = () => {
           Fringilla tincidunt tempor euismod porttitor quis id ame.
         </p>
         <div className="search">
-          <img src="public/search.png" alt="" />
+          <img src="/public/search.png" alt="" />
           <input type="text" name="search" id="search" placeholder="Company, Job Title..." />
-          <img src="public/map-pin-3.png" alt="" />
+          <img src="/public/map-pin-3.png" alt="" />
           <input type="text" name="map" id="map" placeholder="City, State, or Country"
           />
           <button>Search</button>
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-right">
-        <img src="public/image 104.png" alt="" />
+        <img src="/public/image 104.png" alt="" />
       </div>
     </div>
   );

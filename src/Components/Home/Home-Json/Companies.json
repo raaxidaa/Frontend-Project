@@ -1,42 +1,42 @@
 [
     {
       "id": 1,
-      "image": "public/r1.png",
+      "image": "/public/r1.png",
       "name": "Shopify",
       "description": "Shopify is a cloud-based team collaboration tool founded by Stewart Butterfield, Eric C...",
       "jobs": "12 Jobs Available"
     },
     {
       "id": 2,
-      "image": "public/r2.png",
+      "image": "/public/r2.png",
       "name": "Intercom",
       "description": "Intercom is a cloud-based team collaboration tool founded by Stewart But...",
       "jobs": "12 Jobs Available"
     },
     {
       "id": 3,
-      "image": "public/r3.png",
+      "image": "/public/r3.png",
       "name": "Mailchimp",
       "description": "Mailchimp is a cloud-based team collaboration tool founded by Stewart But...",
       "jobs": "12 Jobs Available"
     },
     {
       "id": 4,
-      "image": "public/r4.png",
+      "image": "/public/r4.png",
       "name": "Telegram",
       "description": "Telegram is a cloud-based team collaboration tool founded by Stewart Butt...",
       "jobs": "12 Jobs Available"
     },
     {
       "id": 5,
-      "image": "public/r5.png",
+      "image": "/public/r5.png",
       "name": "AirBnb",
       "description": "AirBnb is a cloud-based team collaboration tool founded by Stewart Butterfield, Eric C...",
       "jobs": "12 Jobs Available"
     },
     {
       "id": 6,
-      "image": "public/r6.png",
+      "image": "/public/r6.png",
       "name": "Meta",
       "description": "Meta is a cloud-based team collaboration tool founded by Stewart Butterfield, Eric C...",
       "jobs": "12 Jobs Available"

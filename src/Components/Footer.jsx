@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='footer'>
-        <img src="public/Vector 2.png" alt=""  className='absolute1'/>
-        <img src="public/Vector 3.png" alt="" className='absolute2'/>
-        <img src="public/Burst-pucker-2.png" alt="" className='absolute3' />
-        <img src="public/Burst-pucker-2.png" alt="" className='absolute4' />
+        <img src="/public/Vector 2.png" alt=""  className='absolute1'/>
+        <img src="/public/Vector 3.png" alt="" className='absolute2'/>
+        <img src="/public/Burst-pucker-2.png" alt="" className='absolute3' />
+        <img src="/public/Burst-pucker-2.png" alt="" className='absolute4' />
         <h1>Explore a
-        Job Now! <img src="public/Burst-pucker-2.png" /> </h1>
+        Job Now! <img src="/public/Burst-pucker-2.png" /> </h1>
         <p>Hoob is the platform, startups can get assistance with their recruitment<br></br>
         of talent as well as connection with investors.</p>
         <button>Explore Jobs</button>

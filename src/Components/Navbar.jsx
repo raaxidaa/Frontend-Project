@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 const Navbar = () => {
     return (
         <div className='nav'>
@@ -14,6 +13,7 @@ const Navbar = () => {
                     <NavLink to="/seekfunding" activeclassname="active">Seek Funding</NavLink>
                 </div>
             </div>
+            <div class="menu-icon">☰</div>
             <div className="right">
               <button>Log In</button>
               <button>Sign Up</button>
