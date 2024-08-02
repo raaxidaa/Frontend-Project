@@ -1,8 +1,9 @@
 import React from 'react'
+import Funding from '../Components/Seek Funding/Funding'
 
 const SeekFunding = () => {
   return (
-    <div>SeekFunding</div>
+    <Funding />
   )
 }
 

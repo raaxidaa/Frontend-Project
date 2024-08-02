@@ -13,7 +13,7 @@ const Navbar = () => {
                     <NavLink to="/seekfunding" activeclassname="active">Seek Funding</NavLink>
                 </div>
             </div>
-            <div class="menu-icon">☰</div>
+            <div className="menu-icon">☰</div>
             <div className="right">
               <button>Log In</button>
               <button>Sign Up</button>

@@ -9,6 +9,8 @@ import Investor from './Pages/Investor';
 import './App.css';
 import Footer from './Components/Footer';
 import { Route, Routes } from 'react-router-dom';
+import JobDetails from './Components/Find-Jobs/JobDetails';
+import FindJobs from './Components/Find-Jobs/FindJobs';
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/browsestartups" element={<BrowseSturtups />} />
         <Route path='/seekfunding' element={<SeekFunding />} />
+        <Route path="/job/:id" element={<JobDetails />} />
       </Routes>
       <Footer />
     </div>

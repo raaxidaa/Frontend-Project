@@ -1,8 +1,9 @@
 import React from 'react'
+import Browse from '../Components/BrowseSturtups/Browse'
 
 const BrowseSturtups = () => {
   return (
-    <div>BrowseSturtups</div>
+   <Browse ></Browse>
   )
 }
 

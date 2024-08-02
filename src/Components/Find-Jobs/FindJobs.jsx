@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import jobsData from './Find Jobs Json/jobsData.json';
+import { Link } from 'react-router-dom';
 
 const FindJobs = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -10,7 +11,10 @@ const FindJobs = () => {
     const [selectedJobType, setSelectedJobType] = useState('');
     const [minSalary, setMinSalary] = useState('');
     const [maxSalary, setMaxSalary] = useState('');
-    const [showFilters, setShowFilters] = useState(true);
+
+    useEffect(() => {
+        applyFilters(jobsData);
+    }, [selectedRole, selectedLevel, selectedJobType, minSalary, maxSalary, searchQuery, locationQuery]);
 
     const handleSearch = () => {
         const filteredData = jobsData.filter(job =>
@@ -53,24 +57,20 @@ const FindJobs = () => {
 
     const handleRoleFilter = (keyword) => {
         setSelectedRole(keyword);
-        applyFilters(filteredJobs);
     };
 
     const handleLevelFilter = (level) => {
         setSelectedLevel(level);
-        applyFilters(filteredJobs);
     };
 
     const handleJobTypeFilter = (jobType) => {
         setSelectedJobType(jobType);
-        applyFilters(filteredJobs);
     };
 
     const handleRemoteFilter = () => {
-        const filteredData = filteredJobs.filter(job =>
-            job.remoteStatus === "Remote OK"
+        setFilteredJobs(prevJobs =>
+            prevJobs.filter(job => job.remoteStatus === "Remote OK")
         );
-        setFilteredJobs(filteredData);
     };
 
     const handleClearFilters = () => {
@@ -91,7 +91,6 @@ const FindJobs = () => {
         } else if (id === 'maxSalary') {
             setMaxSalary(value);
         }
-        applyFilters(filteredJobs);
     };
 
     const applyFilters = (data) => {
@@ -130,10 +129,6 @@ const FindJobs = () => {
         setFilteredJobs(filteredData);
     };
 
-    const toggleFilters = () => {
-        setShowFilters(prev => !prev);
-    };
-
     return (
         <div className="back">
             <div className='find-jobs container'>
@@ -157,6 +152,7 @@ const FindJobs = () => {
                         <div className="jobs">
                             {filteredJobs.length > 0 ? (
                                 filteredJobs.map(job => (
+                                    <Link to={`/job/${job.id}`}>
                                     <div className="job" key={job.id}>
                                         <div className="job-top">
                                             <div className="job-top-left">
@@ -201,7 +197,9 @@ const FindJobs = () => {
                                                 </div>
                                             )}
                                         </div>
+                                      
                                     </div>
+                                      </Link>
                                 ))
                             ) : (
                                 <p className='error1'>No jobs found matching the entered criteria.</p>
@@ -214,78 +212,78 @@ const FindJobs = () => {
                             <span className='clear' onClick={handleClearFilters}> Clear</span>
                         </div>
                         <div className="filters">
-                            <div className={`filter1 ${showFilters ? '' : 'hidden'}`}>
+                            <div className="filter1">
                                 <div className="title">
-                                    <span className='uno1' onClick={toggleFilters}>Roles</span>
+                                    <span className='hidden1'>Roles</span>
                                     <img src="/public/arrow-chevron-up.png" alt="" />
                                 </div>
                                 {keywords.map((keyword, index) => (
-                                    <div className="five uno" key={index}>
+                                    <div className="five uno1" key={index}>
                                         <input type="radio" name="roles" id={keyword} onChange={() => handleRoleFilter(keyword)} checked={selectedRole === keyword} />
                                         <label htmlFor={keyword}>{keyword} <span>({jobCounts[keyword]})</span></label>
                                     </div>
                                 ))}
                             </div>
-                            <div className={`filter2 ${showFilters ? '' : 'hidden'}`}>
+                            <div className="filter2">
                                 <div className="title">
-                                    <span className='uno1' onClick={toggleFilters}>Seniority Level</span>
+                                    <span>Seniority Level</span>
                                     <img src="/public/arrow-chevron-up.png" alt="" />
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="level" id="Junior" onChange={() => handleLevelFilter("Junior")} checked={selectedLevel === "Junior"} />
-                                    <label htmlFor="Junior">Junior  </label>
+                                    <label htmlFor="Junior">Junior</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="level" id="Mid-Level" onChange={() => handleLevelFilter("Mid-Level")} checked={selectedLevel === "Mid-Level"} />
-                                    <label htmlFor="Mid-Level">Mid-Level  </label>
+                                    <label htmlFor="Mid-Level">Mid-Level</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="level" id="Senior" onChange={() => handleLevelFilter("Senior")} checked={selectedLevel === "Senior"} />
-                                    <label htmlFor="Senior">Senior  </label>
+                                    <label htmlFor="Senior">Senior</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="level" id="Expert" onChange={() => handleLevelFilter("Expert & Leadership")} checked={selectedLevel === "Expert & Leadership"} />
-                                    <label htmlFor="Expert">Expert & Leadership </label>
+                                    <label htmlFor="Expert">Expert & Leadership</label>
                                 </div>
                             </div>
-                            <div className={`filter3 ${showFilters ? '' : 'hidden'}`}>
+                            <div className="filter3">
                                 <div className="title">
-                                    <span className='uno1' onClick={toggleFilters}>Job Type</span>
+                                    <span>Job Type</span>
                                     <img src="/public/arrow-chevron-up.png" alt="" />
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="jobType" id="Full-time" onChange={() => handleJobTypeFilter("Full-time")} checked={selectedJobType === "Full-time"} />
-                                    <label htmlFor="Full-time"> Full-time </label>
+                                    <label htmlFor="Full-time">Full-time</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="jobType" id="Freelance" onChange={() => handleJobTypeFilter("Freelance/Contract")} checked={selectedJobType === "Freelance/Contract"} />
-                                    <label htmlFor="Freelance">  Freelance/Contract</label>
+                                    <label htmlFor="Freelance">Freelance/Contract</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="jobType" id="Internship" onChange={() => handleJobTypeFilter("Internship")} checked={selectedJobType === "Internship"} />
-                                    <label htmlFor="Internship"> Internship</label>
+                                    <label htmlFor="Internship">Internship</label>
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="jobType" id="Part-time" onChange={() => handleJobTypeFilter("Part-time")} checked={selectedJobType === "Part-time"} />
-                                    <label htmlFor="Part-time"> Part-time</label>
+                                    <label htmlFor="Part-time">Part-time</label>
                                 </div>
                             </div>
-                            <div className={`filter4 ${showFilters ? '' : 'hidden'}`}>
+                            <div className="filter4">
                                 <div className="title">
-                                    <span className='uno1' onClick={toggleFilters}>Open to remote</span>
+                                    <span>Open to remote</span>
                                     <img src="/public/arrow-chevron-up.png" alt="" />
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <input type="radio" name="remote" id="remote" onChange={handleRemoteFilter} />
-                                    <label htmlFor="remote"> Open to remote</label>
+                                    <label htmlFor="remote">Open to remote</label>
                                 </div>
                             </div>
-                            <div className={`filter5 ${showFilters ? '' : 'hidden'}`}>
+                            <div className="filter5">
                                 <div className="title">
-                                    <span className='uno1' onClick={toggleFilters}>Salary</span>
+                                    <span>Salary</span>
                                     <img src="/public/arrow-chevron-up.png" alt="" />
                                 </div>
-                                <div className="five uno">
+                                <div className="five">
                                     <select id="minSalary" onChange={handleSalaryChange}>
                                         <option value="">$ Min</option>
                                         <option value="3000">3000</option>
