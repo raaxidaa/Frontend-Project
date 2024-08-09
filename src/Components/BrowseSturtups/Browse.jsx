@@ -140,7 +140,7 @@ const Browse = () => {
                                 {filteredJobs.map(job => (
                                     <div className="comp1" key={job.id}>
                                         <div className="top">
-                                            <img src={`/public/${job.images}`} alt={job.companyName} />
+                                            <img src={`/public/${job.img}`} alt={job.companyName} />
                                             <span>{job.companyName}</span>
                                         </div>
                                         <div className="center">

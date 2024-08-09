@@ -1688,6 +1688,799 @@ font-weight: 400;
 line-height: 24px; /* 150% */
 }
 
+.startups{
+  display: flex;
+ flex-direction: column;
+ width: 100%;
+ position: relative;
+}
+.One{
+  display: flex;
+  justify-content:space-between;
+  height: 100vh;
+  gap: 100px;
+  padding-top: 60px;
+}
+.One .left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.One .left img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.One .left span:nth-of-type(1){
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Bold */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
+}
+.One .left h4{
+  color: var(--Base-Black-100, #222325);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 1 */
+font-family: "Red Hat Display";
+font-size: 56px;
+font-style: normal;
+font-weight: 800;
+line-height: 72px; /* 128.571% */
+letter-spacing: 1.1px;
+}
+.One .left button{
+  display: flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border: none;
+background: var(--Base-Black-100, #222325);
+color: var(--Base-White-100, #FFF);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 160% */
+width: 300px;
+cursor: pointer;
+}
+.One .left p{
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+}
+.One .left span:nth-of-type(2){
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.One .right{
+  position: relative;
+}
+.One .right img:nth-of-type(2){
+  position: absolute;
+top: 40%;
+  right: -100px;
+  z-index: -1;
+}
+.Two{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 80px;
+  flex-direction: column;
+  background: var(--Base-Black-10, #FBFBFB);
+  padding-top: 60px;
+}
+.Two .sponsor2{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 30px;
+}
+.Two .center{
+  display: flex;
+flex-direction: column;
+gap: 50px;
+margin: 48px 140px 80px 140px;
+padding: 40px;
+align-items: center;
+background: var(--Base-White-100, #FFF);
+
+}
+.center> h4{
+  width: 400px;
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 2 */
+font-family: "Red Hat Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px; /* 140% */
+letter-spacing: 0.4px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 20px;
+}
+.numbers .number{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  gap: 15px;
+}
+.number .top{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  position: relative;
+}
+
+.number .top >img{
+  position: absolute;
+}
+.number .top >span{
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+-webkit-text-stroke-width: 2;
+-webkit-text-stroke-color: var(--Base-White-100, #FFF);
+font-family: "Eudoxus Sans";
+font-size: 56px;
+font-style: normal;
+font-weight: 800;
+line-height: 72px; /* 128.571% */
+letter-spacing: 1px;
+z-index: 9999;
+}
+.number >span{
+  color: #000;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+}
+
+.number >p{
+  color: #000;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Medium/Regular */
+font-family: "Red Hat Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.Three{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  padding: 50px;
+}
+.Three >h2{
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 2 */
+font-family: "Red Hat Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px; /* 140% */
+letter-spacing: 0.4px;
+}
+.Three .centers{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: 60px;
+  z-index: 555;
+}
+
+.Three .center1,.center2, .center3, .center4{
+  display: flex;
+ flex-direction: column;
+ gap: 10px;
+ border-radius: 8px;
+border: 2px solid var(--Base-Black-100, #222325);
+background: var(--Base-Black-10, #FBFBFB);
+padding: 20px;
+width: 470px;
+height: 200px;
+}
+.Three .centers .center1 img{
+  width: 40px;
+}
+.Three .centers .center2 img{
+  width: 40px;
+}
+.Three .centers .center3 img{
+  width: 40px;
+}
+.Three .centers .center4 img{
+  width: 40px;
+}
+.Three > img{
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+}
+.Three .centers span{
+  color: var(--Base-Black-100, #222325);
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 160% */
+}
+.Three .centers  p{
+  color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.Three .centers .center1{
+  border-radius: 8px;
+  border: 2px solid var(--Base-Black-100, #222325);
+  background: var(--Base-Black-10, #FBFBFB);
+  box-shadow: 8px 8px 0px 1px #E1F073;
+}
+.Three .centers .center2{
+  border-radius: 8px;
+  border: 2px solid var(--Base-Black-100, #222325);
+  background: var(--Base-Black-10, #FBFBFB);
+  box-shadow: 8px 8px 0px 1px #FA7456;
+}
+.Three .centers .center3{
+  border-radius: 8px;
+  border: 2px solid var(--Base-Black-100, #222325);
+  background: var(--Base-Black-10, #FBFBFB);
+  box-shadow: 8px 8px 0px 1px #FFC73B;
+}
+.Three .centers .center4{
+  border-radius: 8px;
+  border: 2px solid var(--Base-Black-100, #222325);
+  background: var(--Base-Black-10, #FBFBFB);
+  box-shadow: 8px 8px 0px 1px #64C67E;
+}
+.Three button{
+  display: inline-flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+background: var(--Base-Black-100, #222325);
+color: var(--Base-White-100, #FFF);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 160% */
+}
+
+.Four{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  padding: 50px;
+}
+.Four >h2{
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 2 */
+font-family: "Red Hat Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px; /* 140% */
+letter-spacing: 0.4px;
+}
+.Four .centers{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: 60px;
+  z-index: 555;
+}
+.Four .centers .center{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 8px;
+border: 1px solid var(--Base-Black-100, #222325);
+background: var(--Base-Black-10, #FBFBFB);
+box-shadow: 4px 4px 0px 0px #222325;
+width: 400px;
+}
+.Four .centers .center >p{
+  color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+text-align: center;
+}
+.Four .centers .center .bottom{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.Four .centers .center .bottom .left img{
+border-radius: 50%;
+}
+.Four .centers .center .bottom .right h2{
+  color: var(--Base-Black-100, #222325);
+  font-feature-settings: 'liga' off, 'clig' off;
+  
+  /* Body Small/Bold */
+  font-family: "Red Hat Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+}
+.Four .centers .center .bottom .right span{
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Extra Small/Regular */
+font-family: "Red Hat Display";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.1px;
+}
+
+.Five{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  padding: 50px;
+}
+.Five >h2{
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 2 */
+font-family: "Red Hat Display";
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 56px; /* 140% */
+letter-spacing: 0.4px;
+}
+.Five .centers{
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  z-index: 555;
+  border-radius: 8px;
+border: 2px solid #000;
+background: var(--Base-Black-10, #FBFBFB);
+padding: 40px;
+box-shadow: 8px 8px 0px 1px #E1F073;
+}
+.Five .centers .q1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid #EDEDEE;
+}
+.Five .centers .q1 .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.Five .centers .q1 .top h2{
+  color: var(--Base-Black-100, #222325);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 4 */
+font-family: "Red Hat Display";
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: 36px; /* 150% */
+}
+.Five .centers .q1 .top p{
+  color: var(--Base-Black-100, #222325);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Medium/Regular */
+font-family: "Red Hat Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.hidden{
+  display: none;
+}
+.q1 .top {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.q1 .top img {
+  transition: transform 0.3s;
+}
+.q1 .top img.rotate {
+  transform: rotate(180deg);
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.One2{
+  display: flex;
+  justify-content:space-between;
+  height: 100vh;
+  gap: 100px;
+  padding-top: 60px;
+}
+.One2 .left2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 160px;
+}
+.One2 .left2 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.One2 .left2 span:nth-of-type(1){
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Bold */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
+}
+.One2 .left2 h4{
+  color: var(--Base-Black-100, #222325);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Heading/Heading 1 */
+font-family: "Red Hat Display";
+font-size: 56px;
+font-style: normal;
+font-weight: 800;
+line-height: 72px; /* 128.571% */
+letter-spacing: 1.1px;
+}
+.One2 .left2 button{
+  display: flex;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border: none;
+background: var(--Base-Black-100, #222325);
+color: var(--Base-White-100, #FFF);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 160% */
+width: 300px;
+cursor: pointer;
+}
+.One2 .left2 p{
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+}
+.One2 .left2 span:nth-of-type(2){
+  color: var(--Base-Black-60, #7A7B7C);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.One2 .right2{
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.One2 .right2 img:nth-of-type(1){
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.One2 .right2 img:nth-of-type(2){
+  position: absolute;
+top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1780,6 +2573,44 @@ line-height: 24px; /* 150% */
 }
 .tops .left{
   width: 100%;
+}
+
+.One{
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+.One .left{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.One2{
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+.One2 .left2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.Two{
+  height: max-content;
+}
+.Three{
+  height: max-content;
+}
+.Two .center .numbers{
+  flex-wrap: wrap;
+}
+.Four{
+  height: max-content;
+}
+.Three button {
+  z-index: 888;
 }
 
 }
@@ -1908,6 +2739,33 @@ display: block;
 .buttons{
   flex-wrap: wrap;
 }
+
+.One{
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+}
+.One .left{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.Two{
+  height: max-content;
+}
+.Three{
+  height: max-content;
+}
+.Two .center .numbers{
+  flex-wrap: wrap;
+}
+.Four{
+  height: max-content;
+}
+.Three button {
+  z-index: 888;
+}
 }
 
 
@@ -1972,6 +2830,29 @@ display: none;
 .center-left .title{
   flex-wrap: wrap;
 }
+.One img{
+  width: 150px;
+}
+.One2 img{
+  width: 150px;
+}
+.Five .centers{
+  width: 100%;
+}
+.Three .centers{
+  width: 100%;
+}
+.Four .centers{
+  width: 100%;
+}
+.Two .sponsor2{
+  flex-wrap: wrap;
+}
+
+
+
+
+
 
 }
 
