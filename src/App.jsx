@@ -11,6 +11,8 @@ import { Route, Routes } from 'react-router-dom';
 import JobDetails from './Components/Find-Jobs/JobDetails';
 import FindJobs from './Components/Find-Jobs/FindJobs';
 import Investor from './Pages/Investor';
+import Company from './Pages/Company';
+import Blog from './Pages/Blog';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/browsestartups" element={<BrowseSturtups />} />
         <Route path='/seekfunding' element={<SeekFunding />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/job/:id" element={<JobDetails />} />
       </Routes>
       <Footer />

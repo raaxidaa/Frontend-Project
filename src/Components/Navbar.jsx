@@ -11,6 +11,7 @@ const Navbar = () => {
                     <NavLink to="/jobs" activeclassname="active" >Find Jobs</NavLink>
                     <NavLink to="/browsestartups" activeclassname="active">Browse Startups</NavLink>
                     <NavLink to="/seekfunding" activeclassname="active">Seek Funding</NavLink>
+                    <NavLink to="/company" activeclassname="active">Company</NavLink>
                 </div>
             </div>
             <div className="menu-icon">☰</div>
