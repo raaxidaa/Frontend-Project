@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import blogs from './blog.json';
 
 export const Blogs = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [filteredBlogs, setFilteredBlogs] = useState(blogs);
+  const navigate = useNavigate();
 
   const truncateTitle = (title) => {
     return title.length > 20 ? title.substring(0, 40) + '...' : title;
@@ -17,6 +19,10 @@ export const Blogs = () => {
     }
   }, [selectedCategory]);
 
+  const handleBlogClick = (id) => {
+    navigate(`/blog/${id}`);
+  };
+
   return (
     <div className="Blogs container">
       <h4>Latest Articles</h4>
@@ -28,19 +34,20 @@ export const Blogs = () => {
         <span onClick={() => setSelectedCategory('Ameet')}>Ameet</span>
       </div>
       <div className="center">
-        {filteredBlogs.map(blog => (
-          <div key={blog.id} className="blog">
-            <img src={blog.image} alt={blog.topic} />
-            <span>{blog.topic}</span>
-            <h4>{truncateTitle(blog.title)}</h4>
-            <div className="data">
-              <img src={blog.authorImage} alt={blog.author} />
-              <span>{blog.author}</span>
-              <span>on {blog.date}</span>
+          {filteredBlogs.map(blog => (
+            <div key={blog.id} className="blog" onClick={() => handleBlogClick(blog.id)}>
+              <img src={blog.image} alt={blog.topic} />
+              <span>{blog.topic}</span>
+              <h4>{truncateTitle(blog.title)}</h4>
+              <div className="data">
+                <img src={blog.authorImage} alt={blog.author} />
+                <span>{blog.author}</span>
+                <span>on {blog.date}</span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+       
       </div>
     </div>
   );
-}
+};

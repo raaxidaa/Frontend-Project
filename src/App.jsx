@@ -13,6 +13,8 @@ import FindJobs from './Components/Find-Jobs/FindJobs';
 import Investor from './Pages/Investor';
 import Company from './Pages/Company';
 import Blog from './Pages/Blog';
+import BlogDetail from './Components/Blog/BlogDetail';
+import Contact from './Pages/Contact';
 
 const App = () => {
   return (
@@ -27,7 +29,9 @@ const App = () => {
         <Route path='/seekfunding' element={<SeekFunding />} />
         <Route path="/company" element={<Company />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/job/:id" element={<JobDetails />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
       <Footer />
     </div>
