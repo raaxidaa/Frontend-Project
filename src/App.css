@@ -137,6 +137,17 @@ cursor: pointer;
   gap: 45px;
 
 }
+.footer a{
+  color: var(--Base-White-60, #9E9E9F);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
 .absolute1{
   position: absolute;
   top: 20px;
