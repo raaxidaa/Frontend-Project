@@ -28,7 +28,7 @@ const Navbar = () => {
     return (
         <div className='nav'>
             <div className="left">
-                <NavLink to="/" > <img src="public/Logo.png" alt="Logo" /></NavLink>
+                <NavLink to="/" > <img src="/Logo.png" alt="Logo" /></NavLink>
                 <div className={`links desktop-links ${isMenuOpen ? 'open' : ''}`}>
                     <NavLink to="/investor" activeclassname="active">For Investor</NavLink>
                     <NavLink to="/startups" activeclassname="active">For Startups</NavLink>

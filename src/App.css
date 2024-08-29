@@ -55,6 +55,17 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; 
 }
+.nav .left .links a{
+  color: var(--Base-Black-100, #222325);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* Body Small/Regular */
+font-family: "Red Hat Display";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
 .nav .right{
   display: flex;
   align-items: center;
