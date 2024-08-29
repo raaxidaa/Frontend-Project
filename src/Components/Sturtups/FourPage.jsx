@@ -9,7 +9,7 @@ const FourPage = () => {
                 <p>"The Hub is the first place we go to reach the Copenhagen tech and startup community"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image.png" alt="" />
+                        <img src="/Image.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>
@@ -21,7 +21,7 @@ const FourPage = () => {
                 <p>"The Hub helped our recruiting tremendously!"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image2.png" alt="" />
+                        <img src="/Image2.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>
@@ -33,7 +33,7 @@ const FourPage = () => {
                 <p>"What we really enjoy with The Hub is that we can post any position and know we will get relevant applicants"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image3.png" alt="" />
+                        <img src="/Image3.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>
@@ -45,7 +45,7 @@ const FourPage = () => {
                 <p>"The Hub helped our recruiting tremendously!"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image2.png" alt="" />
+                        <img src="/Image2.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>
@@ -57,7 +57,7 @@ const FourPage = () => {
                 <p>"The Hub is the first place we go to reach the Copenhagen tech and startup community"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image.png" alt="" />
+                        <img src="/Image.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>
@@ -69,7 +69,7 @@ const FourPage = () => {
                 <p>"The Hub helped our recruiting tremendously!"</p>
                 <div className="bottom">
                     <div className="left">
-                        <img src="/public/Image2.png" alt="" />
+                        <img src="/Image2.png" alt="" />
                     </div>
                     <div className="right">
                        <h2>Cameron Williamson</h2>

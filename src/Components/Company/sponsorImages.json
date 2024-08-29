@@ -2,23 +2,23 @@
 [
     {
       "id": 1,
-      "image": "/public/Logo.svg"
+      "image": "/Logo.svg"
     },
     {
       "id": 2,
-      "image": "/public/Component 2.png"
+      "image": "/Component 2.png"
     },
     {
       "id": 3,
-      "image": "/public/Logo3.png"
+      "image": "/Logo3.png"
     },
     {
       "id": 4,
-      "image": "/public/Component 3.png"
+      "image": "/Component 3.png"
     },
     {
       "id": 5,
-      "image": "/public/Component 4.png"
+      "image": "/Component 4.png"
     }
   ]
   

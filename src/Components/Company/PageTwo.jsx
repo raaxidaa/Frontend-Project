@@ -4,8 +4,8 @@ export const PageTwo = () => {
   return (
     <div className="PageTwo">
       <div className="right">
-        <img src="/public/Vector 11.png" alt="" />
-        <img src="/public/Burst-pucker-2.png" alt="" />
+        <img src="/Vector 11.png" alt="" />
+        <img src="/Burst-pucker-2.png" alt="" />
       </div>
       <div className="left">
         <h4>The Job</h4>

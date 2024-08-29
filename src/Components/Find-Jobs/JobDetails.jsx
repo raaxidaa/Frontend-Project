@@ -34,7 +34,7 @@ const JobDetails = () => {
     return (
         <div className="job-details">
             <div className='back container' onClick={handleBackClick}>
-                <img src="/public/l1.png" alt="" />
+                <img src="/l1.png" alt="" />
                 <span>Back</span>
             </div>
             <div className="job-details-center container">
@@ -45,25 +45,25 @@ const JobDetails = () => {
                         <div className="three">
                             {job.location && (
                                 <div className="date">
-                                    <img src="/public/map-pin-3.png" alt="Location" />
+                                    <img src="/map-pin-3.png" alt="Location" />
                                     <span>{job.location}</span>
                                 </div>
                             )}
                             {job.jobType && (
                                 <div className="date">
-                                    <img src="/public/calendar.png" alt="Job Type" />
+                                    <img src="/calendar.png" alt="Job Type" />
                                     <span>{job.jobType}</span>
                                 </div>
                             )}
                             {job.experience && (
                                 <div className="date">
-                                    <img src="/public/reports.png" alt="Experience" />
+                                    <img src="/reports.png" alt="Experience" />
                                     <span>{job.experience}</span>
                                 </div>
                             )}
                             {job.remoteStatus && (
                                 <div className="date">
-                                    <img src="/public/mouse.png" alt="Remote Status" />
+                                    <img src="/mouse.png" alt="Remote Status" />
                                     <span>{job.remoteStatus}</span>
                                 </div>
                             )}
@@ -71,18 +71,18 @@ const JobDetails = () => {
                         <div className="buttons">
                             <div className="left-buttons">
                                 <button onClick={handleApplyClick}>
-                                    <img src="/public/airplay.png" alt="" />
+                                    <img src="/airplay.png" alt="" />
                                     <span className='apply'>Apply Job</span>
                                 </button>
                                 <button>
-                                    <img src="/public/bookmark.png" alt="" />
+                                    <img src="/bookmark.png" alt="" />
                                 </button>
                             </div>
                             <div className="right-buttons">
-                                <img src="/public/f.png" alt="" />
-                                <img src="/public/l1.png" alt="" />
-                                <img src="/public/t.png" alt="" />
-                                <img src="/public/end.png" alt="" />
+                                <img src="/f.png" alt="" />
+                                <img src="/l1.png" alt="" />
+                                <img src="/t.png" alt="" />
+                                <img src="/end.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -123,18 +123,18 @@ const JobDetails = () => {
                         <div className="buttons">
                             <div className="left-buttons">
                                 <button onClick={handleApplyClick}>
-                                    <img src="/public/airplay.png" alt="" />
+                                    <img src="/airplay.png" alt="" />
                                     <span>Apply Job</span>
                                 </button>
                                 <button>
-                                    <img src="/public/bookmark.png" alt="" />
+                                    <img src="/bookmark.png" alt="" />
                                 </button>
                             </div>
                             <div className="right-buttons">
-                                <img src="/public/f.png" alt="" />
-                                <img src="/public/linkedin.png" alt="" />
-                                <img src="/public/t.png" alt="" />
-                                <img src="/public/end.png" alt="" />
+                                <img src="/f.png" alt="" />
+                                <img src="/linkedin.png" alt="" />
+                                <img src="/t.png" alt="" />
+                                <img src="/end.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const JobDetails = () => {
                 <div className="job-details-right">
                     <img src={job.logo} alt="" />
                     <span>Job By</span>
-                    <h1>{job.jobTitle} <img src="/public/logo1.png" alt="" /></h1>
+                    <h1>{job.jobTitle} <img src="/logo1.png" alt="" /></h1>
                     <p>{job.description}</p>
                 </div>
             </div>
@@ -182,7 +182,7 @@ const JobDetails = () => {
                                 <div className="buttons">
                                     <span onClick={handleCloseModal}>Cancel</span>
                                     <button className='none' type="submit">
-                                        <img src="/public/airplay11.png" alt="" />
+                                        <img src="/airplay11.png" alt="" />
                                         Apply Job
                                     </button>
                                 </div>
@@ -191,7 +191,7 @@ const JobDetails = () => {
                     ) : (
                         <div className="modal-content2">
                             <span className="close" onClick={handleCloseModal}>&times;</span>
-                            <img src="/public/mail-check.png" alt="" />
+                            <img src="/mail-check.png" alt="" />
                             <h1>Application Sent!</h1>
                             <p>Mailchimp will contact if your skills and experiences are a strong match</p>
                             <button onClick={handleCloseModal}>Browse more similar jobs</button>

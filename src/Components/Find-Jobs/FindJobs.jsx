@@ -133,9 +133,9 @@ const FindJobs = () => {
         <div className="back">
             <div className='find-jobs container'>
                 <div className="search2">
-                    <img src="/public/search.png" alt="" />
+                    <img src="/search.png" alt="" />
                     <input type="text" name="search" id="search" placeholder="Company, Job Title..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-                    <img src="/public/map-pin-3.png" alt="" />
+                    <img src="/map-pin-3.png" alt="" />
                     <input type="text" name="map" id="map" placeholder="City, State, or Country" value={locationQuery} onChange={(e) => setLocationQuery(e.target.value)} />
                     <button onClick={handleSearch}>Search</button>
                 </div>
@@ -144,9 +144,9 @@ const FindJobs = () => {
                         <div className="title">
                             <h1>Job Opportunities <span>({filteredJobs.length})</span></h1>
                             <button className='newest'>
-                                <img src="/public/flashlight.png" alt="" />
+                                <img src="/flashlight.png" alt="" />
                                 Newest
-                                <img src="/public/arrow-chevron-down.png" alt="" />
+                                <img src="/arrow-chevron-down.png" alt="" />
                             </button>
                         </div>
                         <div className="jobs">
@@ -174,25 +174,25 @@ const FindJobs = () => {
                                         <div className="job-bottom">
                                             {job.location && (
                                                 <div className="date">
-                                                    <img src="/public/map-pin-3.png" alt="" />
+                                                    <img src="/map-pin-3.png" alt="" />
                                                     <span>{job.location}</span>
                                                 </div>
                                             )}
                                             {job.jobType && (
                                                 <div className="date">
-                                                    <img src="/public/calendar.png" alt="" />
+                                                    <img src="/calendar.png" alt="" />
                                                     <span>{job.jobType}</span>
                                                 </div>
                                             )}
                                             {job.experience && (
                                                 <div className="date">
-                                                    <img src="/public/reports.png" alt="" />
+                                                    <img src="/reports.png" alt="" />
                                                     <span>{job.experience}</span>
                                                 </div>
                                             )}
                                             {job.remoteStatus && (
                                                 <div className="date">
-                                                    <img src="/public/mouse.png" alt="" />
+                                                    <img src="/mouse.png" alt="" />
                                                     <span>{job.remoteStatus}</span>
                                                 </div>
                                             )}
@@ -215,7 +215,7 @@ const FindJobs = () => {
                             <div className="filter1">
                                 <div className="title">
                                     <span className='hidden1'>Roles</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 {keywords.map((keyword, index) => (
                                     <div className="five uno1" key={index}>
@@ -227,7 +227,7 @@ const FindJobs = () => {
                             <div className="filter2">
                                 <div className="title">
                                     <span>Seniority Level</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" name="level" id="Junior" onChange={() => handleLevelFilter("Junior")} checked={selectedLevel === "Junior"} />
@@ -249,7 +249,7 @@ const FindJobs = () => {
                             <div className="filter3">
                                 <div className="title">
                                     <span>Job Type</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" name="jobType" id="Full-time" onChange={() => handleJobTypeFilter("Full-time")} checked={selectedJobType === "Full-time"} />
@@ -271,7 +271,7 @@ const FindJobs = () => {
                             <div className="filter4">
                                 <div className="title">
                                     <span>Open to remote</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" name="remote" id="remote" onChange={handleRemoteFilter} />
@@ -281,7 +281,7 @@ const FindJobs = () => {
                             <div className="filter5">
                                 <div className="title">
                                     <span>Salary</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <select id="minSalary" onChange={handleSalaryChange}>

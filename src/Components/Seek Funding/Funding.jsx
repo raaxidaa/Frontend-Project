@@ -136,8 +136,8 @@ const Funding = () => {
                         <span>⚡ Takes less than ~2 min to complete️</span>
                     </div>
                     <div className="right">
-                        <img src="/public/Illustration.png" alt="Illustration" />
-                        <img src="/public/Vector 33.png" alt="Vector" />
+                        <img src="/Illustration.png" alt="Illustration" />
+                        <img src="/Vector 33.png" alt="Vector" />
                     </div>
                 </div>
                 <div className="find-jobs-center">
@@ -145,9 +145,9 @@ const Funding = () => {
                         <div className="title">
                             <h1>Recent Investors <span>({filteredJobs.length})</span></h1>
                             <button className='newest'>
-                                <img src="/public/flashlight.png" alt="Flashlight" />
+                                <img src="/flashlight.png" alt="Flashlight" />
                                 Newest
-                                <img src="/public/arrow-chevron-down.png" alt="Arrow" />
+                                <img src="/arrow-chevron-down.png" alt="Arrow" />
                             </button>
                         </div>
                         {filteredJobs.length === 0 ? (
@@ -157,13 +157,13 @@ const Funding = () => {
                                 {filteredJobs.map(job => (
                                     <div className="comp2" key={job.id}>
                                         <div className="imgt">
-                                            <img src={`/public/${job.images}`} alt={job.companyName} />
+                                            <img src={`/${job.images}`} alt={job.companyName} />
                                         </div>
                                         <h6>{job.companyName}</h6>
                                         <p>{job.description}</p>
                                         <div className="end">
                                             <span>{job.funding}</span>
-                                            <img src="/public/arrow-right-up.png" alt="Arrow" />
+                                            <img src="/arrow-right-up.png" alt="Arrow" />
                                         </div>
                                     </div>
                                 ))}
@@ -179,7 +179,7 @@ const Funding = () => {
                             <div className="filter1">
                                 <div className="title">
                                     <span>Keyword</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="Arrow" />
+                                    <img src="/arrow-chevron-up.png" alt="Arrow" />
                                 </div>
                                 <div className="five">
                                     <input 
@@ -196,7 +196,7 @@ const Funding = () => {
                             <div className="filter1">
                                 <div className="title">
                                     <span>Location</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="Arrow" />
+                                    <img src="/arrow-chevron-up.png" alt="Arrow" />
                                 </div>
                                 <div className="five">
                                     <input 
@@ -213,7 +213,7 @@ const Funding = () => {
                             <div className="filter3">
                                 <div className="title">
                                     <span>Investor Type</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="Arrow" />
+                                    <img src="/arrow-chevron-up.png" alt="Arrow" />
                                 </div>
                                 {keywords2.map((keyword, index) => (
                                     <div className="five uno1" key={index}>
@@ -233,7 +233,7 @@ const Funding = () => {
                             <div className="filter2">
                                 <div className="title">
                                     <span>Invest in Stage</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="Arrow" />
+                                    <img src="/arrow-chevron-up.png" alt="Arrow" />
                                 </div>
                                 <div className="five">
                                     <input 
@@ -279,7 +279,7 @@ const Funding = () => {
                             <div className="filter1">
                                 <div className="title">
                                     <span className='hidden1'>Industry</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="Arrow" />
+                                    <img src="/arrow-chevron-up.png" alt="Arrow" />
                                 </div>
                                 {keywords.map((keyword, index) => (
                                     <div className="five uno1" key={index}>

@@ -117,9 +117,9 @@ const Browse = () => {
         <div className="back">
             <div className='find-jobs container'>
                 <div className="search2">
-                    <img src="/public/search.png" alt="" />
+                    <img src="/search.png" alt="" />
                     <input type="text" id="search" name="search" placeholder="Company, Job Title..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-                    <img src="/public/map-pin-3.png" alt="" />
+                    <img src="/map-pin-3.png" alt="" />
                     <input type="text" id="map" name="map" placeholder="City, State, or Country" value={locationQuery} onChange={(e) => setLocationQuery(e.target.value)} />
                     <button onClick={handleSearch}>Search</button>
                 </div>
@@ -128,9 +128,9 @@ const Browse = () => {
                         <div className="title">
                             <h1>Exciting Companies <span>({filteredJobs.length})</span></h1>
                             <button className='newest'>
-                                <img src="/public/flashlight.png" alt="" />
+                                <img src="/flashlight.png" alt="" />
                                 Newest
-                                <img src="/public/arrow-chevron-down.png" alt="" />
+                                <img src="/arrow-chevron-down.png" alt="" />
                             </button>
                         </div>
                         {filteredJobs.length === 0 ? (
@@ -140,7 +140,7 @@ const Browse = () => {
                                 {filteredJobs.map(job => (
                                     <div className="comp1" key={job.id}>
                                         <div className="top">
-                                            <img src={`/public/${job.img}`} alt={job.companyName} />
+                                            <img src={`/${job.img}`} alt={job.companyName} />
                                             <span>{job.companyName}</span>
                                         </div>
                                         <div className="center">
@@ -148,7 +148,7 @@ const Browse = () => {
                                         </div>
                                         <div className="bottom">
                                             <button>12 Jobs Available</button>
-                                            <img src="/public/arrow-right-up.png" alt="" />
+                                            <img src="/arrow-right-up.png" alt="" />
                                         </div>
                                     </div>
                                 ))}
@@ -164,7 +164,7 @@ const Browse = () => {
                             <div className="filter1">
                                 <div className="title">
                                     <span className='hidden1'>Industry</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 {keywords.map((keyword, index) => (
                                     <div className="five uno1" key={index}>
@@ -178,7 +178,7 @@ const Browse = () => {
                             <div className="filter2">
                                 <div className="title">
                                     <span>Startup Stage</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" id="Idea" name="StartupStage" onChange={() => handleLevelFilter("Idea")} checked={selectedLevel === "Idea"} />
@@ -200,7 +200,7 @@ const Browse = () => {
                             <div className="filter3">
                                 <div className="title">
                                     <span>Startup Size</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" id="on" name="StartupSize" onChange={() => handleJobTypeFilter("1-10")} checked={selectedJobType === "1-10"} />
@@ -222,7 +222,7 @@ const Browse = () => {
                             <div className="filter4">
                                 <div className="title">
                                     <span>Open to remote</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" id="remote" name="remote" onChange={handleRemoteFilter} />
@@ -232,7 +232,7 @@ const Browse = () => {
                             <div className="filter5">
                                 <div className="title">
                                     <span>Funding</span>
-                                    <img src="/public/arrow-chevron-up.png" alt="" />
+                                    <img src="/arrow-chevron-up.png" alt="" />
                                 </div>
                                 <div className="five">
                                     <input type="radio" id="Currently" name="funding" onChange={() => setSelectedFunding('Currently not looking for funding')} checked={selectedFunding === 'Currently not looking for funding'} />

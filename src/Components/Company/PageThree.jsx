@@ -12,8 +12,8 @@ const PageThree = () => {
                 </p>
             </div>
             <div className="right">
-            <img src="/public/Burst-pucker-2.png" alt="" />
-                <img src="/public/Vector 333.png" alt="" />
+            <img src="/Burst-pucker-2.png" alt="" />
+                <img src="/Vector 333.png" alt="" />
             </div>
         </div>
     )

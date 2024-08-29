@@ -16,7 +16,7 @@ export const TwoPage = () => {
                     <div className="number">
                         <div className="top">
                             <span>01</span>
-                            <img src="/public/Rating.png" alt="" />
+                            <img src="/Rating.png" alt="" />
                         </div>
                         <span>Create startup profile</span>
                         <p>In less than 7 minutes, you’ll get a sleek profile helping you attract talent and potential investors.</p>
@@ -24,7 +24,7 @@ export const TwoPage = () => {
                     <div className="number">
                         <div className="top">
                             <span>02</span>
-                            <img src="/public/Button.png" alt="" />
+                            <img src="/Button.png" alt="" />
                         </div>
                         <span>Post jobs for free</span>
                         <p>Reach entrepreneurial and tech talent, exclusively! 170,000+ candidates and thousands more every week.</p>
@@ -32,7 +32,7 @@ export const TwoPage = () => {
                     <div className="number">
                         <div className="top">
                             <span>03</span>
-                            <img src="/public/Rating1.png" alt="" />
+                            <img src="/Rating1.png" alt="" />
                         </div>
                         <span>Hire the perfect match</span>
                         <p>Let our free applicant management system help you catch the Ninja in

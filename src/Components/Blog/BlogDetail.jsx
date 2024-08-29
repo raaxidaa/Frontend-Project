@@ -27,10 +27,10 @@ const BlogDetail = () => {
                         </div>
                     </div>
                     <div className="right">
-                        <img src="/public/k1.png" alt="" />
-                        <img src="/public/k2.png" alt="" />
-                        <img src="/public/k3.png" alt="" />
-                        <img src="/public/k4.png" alt="" />
+                        <img src="/k1.png" alt="" />
+                        <img src="/k2.png" alt="" />
+                        <img src="/k3.png" alt="" />
+                        <img src="/k4.png" alt="" />
                     </div>
                 </div>
                 <h1>{blog.title}</h1>
