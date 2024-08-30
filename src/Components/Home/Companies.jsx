@@ -1,12 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import data from './Home-Json/Companies.json'; 
 
 const Companies = () => {
+  const navigate = useNavigate();
+
+  const handleSeeAllClick = () => {
+    navigate('/company'); 
+  };
+
   return (
     <div className='companies container'> 
       <div className="companies-top">
         <h1>Browse by Popular Companies</h1>
-        <div className="see-company">
+        <div className="see-company" onClick={handleSeeAllClick}>
           <span>Aliquet ipsum id netus eget nibh in. Sed ut.</span>
           <span>See All Company</span>
           <img src="/arrow-right.png" alt="" />

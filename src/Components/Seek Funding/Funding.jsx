@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import InvestorData from './investor.json';
-
+import { useNavigate } from 'react-router-dom';
 const Funding = () => {
+    const navigate = useNavigate();
+    const handleSeeAllClick = () => {
+      navigate('/investor'); 
+    };
+
     const [searchQuery, setSearchQuery] = useState('');
     const [locationQuery, setLocationQuery] = useState('');
     const [filteredJobs, setFilteredJobs] = useState(InvestorData);
@@ -132,7 +137,7 @@ const Funding = () => {
                         <span>SEEK FUNDING</span>
                         <h4>Connect to leading investors</h4>
                         <p>Unsure which funding opportunity is right for you? Use our investor matching tool to help you on to your next step.</p>
-                        <button>Find Investor</button>
+                        <button onClick={handleSeeAllClick}>Find Investor</button>
                         <span>⚡ Takes less than ~2 min to complete️</span>
                     </div>
                     <div className="right">

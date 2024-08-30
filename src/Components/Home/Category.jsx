@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Category = () => {
+  const navigate = useNavigate();
+
   const categories = [
     { id: 1, image: '/i1.png', title: 'Business Development' },
     { id: 2, image: '/i2.png', title: 'Customer Service' },
@@ -10,20 +13,24 @@ const Category = () => {
     { id: 6, image: '/i6.png', title: 'Mobile Development' }
   ];
 
+  const handleSeeAllClick = () => {
+    navigate('/seekfunding'); 
+  };
+
   return (
     <div className='category container'>
       <div className="category-left">
         <h1>Explore by Category</h1>
         <p>Nisl urna scelerisque id vel vitae at a mi nibh platea in.</p>
-        <div className="see">
+        <div className="see" onClick={handleSeeAllClick}>
           <span>See All Category</span>
-          <img src="/arrow-right.png" alt="" />
+          <img src="/arrow-right.png" alt="Arrow right" />
         </div>
       </div>
       <div className="category-right">
         {categories.map((category) => (
           <div key={category.id} className="one">
-           <p> <img src={category.image} alt={category.title} /></p>
+            <img src={category.image} alt={category.title} />
             <span>{category.title}</span>
           </div>
         ))}

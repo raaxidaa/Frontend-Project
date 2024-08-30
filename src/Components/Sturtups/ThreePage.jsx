@@ -1,6 +1,10 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 const ThreePage = () => {
+    const navigate = useNavigate();
+    const handleSeeAllClick = () => {
+        navigate('/browsestartups'); 
+      };
   return (
     <div className="Three">
         <h2>What You Get</h2>
@@ -27,7 +31,7 @@ const ThreePage = () => {
                 <p>The Hub is where startups grow! Take a look yourself and bookmark your favorites for future reference</p>
             </div>
         </div>
-        <button>Browse Startups</button>
+        <button onClick={handleSeeAllClick}>Browse Startups</button>
     </div>
   )
 }
