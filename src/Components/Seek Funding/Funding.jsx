@@ -2,9 +2,13 @@ import React, { useState, useEffect } from 'react';
 import InvestorData from './investor.json';
 import { useNavigate } from 'react-router-dom';
 const Funding = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
     const navigate = useNavigate();
     const handleSeeAllClick = () => {
       navigate('/investor'); 
+      scrollToTop()
     };
 
     const [searchQuery, setSearchQuery] = useState('');

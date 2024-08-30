@@ -4,8 +4,11 @@ import data from './Home-Json/Companies.json';
 
 const Companies = () => {
   const navigate = useNavigate();
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const handleSeeAllClick = () => {
+    scrollToTop()
     navigate('/company'); 
   };
 

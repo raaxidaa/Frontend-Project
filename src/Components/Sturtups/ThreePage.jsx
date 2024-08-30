@@ -1,9 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 const ThreePage = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
     const navigate = useNavigate();
     const handleSeeAllClick = () => {
         navigate('/browsestartups'); 
+        scrollToTop()
       };
   return (
     <div className="Three">

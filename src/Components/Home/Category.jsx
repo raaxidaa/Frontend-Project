@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Category = () => {
   const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const categories = [
     { id: 1, image: '/i1.png', title: 'Business Development' },
@@ -15,6 +18,7 @@ const Category = () => {
 
   const handleSeeAllClick = () => {
     navigate('/seekfunding'); 
+    scrollToTop()
   };
 
   return (
