@@ -3915,6 +3915,9 @@ display: none;
 .center-right{
   width: 100%;
 }
+.see-company{
+  flex-direction: column;
+}
 .back{
   width: 100%;
 }
@@ -4009,6 +4012,43 @@ display: block;
   width: 100%;
 }
 .BlogTop .right{
+  width: 100%;
+}
+.Blogs{
+  align-items: center;
+  justify-content: center;
+}
+.Blogs .center{
+  align-items: center;
+  justify-content: center;
+}
+.Blogs .center .blog{
+width: 100%;
+}
+.endblog .blog{
+  width: 100%;
+}
+.PageOne >p{
+  font-size: 20px;
+}
+.companies1{
+  align-items: center;
+  justify-content: center;
+}
+.search{
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.search img{
+  display: none;
+}
+
+.companies-bottom{
+  align-items: center;
+  justify-content: center;
+}
+.companies-bottom .two{
   width: 100%;
 }
 }
