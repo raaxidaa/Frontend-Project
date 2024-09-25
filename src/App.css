@@ -34,6 +34,7 @@
   padding: 18px 80px;
   background: var(--Base-White-100, #fff);
   backdrop-filter: blur(24px);
+  position: relative;
 }
 .nav .left {
   display: flex;
@@ -67,7 +68,7 @@
 }
 .nav .left .links a.active {
   font-weight: bold;
-  color: blue;
+  color:#e1f073;
 }
 .nav .right {
   display: flex;
@@ -119,7 +120,7 @@
   cursor: pointer;
 }
 .active {
-  color: blue;
+  color:#e1f073;
 }
 .footer {
   width: 100%;
@@ -270,8 +271,9 @@
   line-height: 20px; /* 142.857% */
 }
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 .header {
@@ -560,6 +562,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .companies .companies-bottom .two {
   display: flex;
@@ -604,6 +608,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+  height: 40px;
 }
 
 .companies .companies-bottom .two .two-bottom {
@@ -683,6 +688,8 @@
 }
 .slides {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
   padding: 10px;
@@ -691,7 +698,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 230px;
+
 }
 .slide img {
   width: 64px;
@@ -704,7 +711,7 @@
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Red Hat Display";
-  font-size: 20px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: 72px; /* 128.571% */
@@ -1143,9 +1150,10 @@
   font-size: 30px;
   font-display: none;
   cursor: pointer;
+  position: relative;
 }
 
-.menu-icon > span{
+.menu-icon > span {
   cursor: pointer;
 }
 
@@ -3280,23 +3288,24 @@
 
 .mobile-links {
   /* display: none; */
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
+
   top: 60px;
-  right: 10%;
+  right: 0;
   height: max-content;
   width: 250px;
   background-color: #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: 0.3s ease-in-out;
   padding: 20px;
   background-color: #ededee;
   display: flex;
+  position: absolute;
   flex-direction: column;
   gap: 20px;
   z-index: 50;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .mobile-links.open {
@@ -3651,7 +3660,117 @@
     width: 100%;
     object-fit: cover;
   }
+.header .header-left h1{
+  font-size: 20px;
+}
+.header .header-left h1 img{
+  width: 20px;
+}
+.header .header-left p{
+  font-size: 20px;
+}
+.header .header-left .search{
+  gap: 10px;
+  height: max-content;
+  
+}
+.header .header-left .search button{
+  padding: 5px;
+  height: 20px;
+  font-size: 10px;
+}
+.header .header-left .search input{
+  font-size: 10px;
+}
+.header .header-left .sponsor{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.header .header-left .sponsor img{
+  width: 40px;
+}
+.category .category-left{
+  gap: 20px;
+}
+.category .category-left h1{
+  font-size: 20px;
+}
+.category .category-left p{
+  font-size: 20px;
+  text-align: center;
+}
+.category .category-left .see span{
+  font-size: 20px;
+}
+.category .category-right{
+  margin-top: 20px;
+  gap: 10px;
+}
+.category .category-right .one{
+  padding: 5px;
+  height: max-content;
+}
 
+.companies .companies-top h1{
+  font-size: 20px;
+  text-align: center;
+}
+.companies .companies-top .see-company{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+.companies .companies-top{
+  align-items: center;
+  justify-content: center;
+}
+.companies .companies-bottom{
+  gap: 10px;
+}
+.companies .companies-bottom .two{
+  gap: 10px;
+  padding: 10px;
+  height: max-content;
+}
+.companies .companies-bottom .two .two-top span{
+  font-size: 20px;
+}
+.Home-end .title h1{
+  font-size: 20px;
+}
+.Home-end .title p{
+  font-size: 18px;
+}
+.Home-end .title button{
+  height: max-content;
+  padding: 10px;
+  font-size: 14px;
+}
+.Home-end .title  
+{
+  gap: 10px;
+}
+.Home-end .slides .slide span{
+  font-size: 22px;
+}
+.footer >h1{
+  font-size: 20px;
+  text-align: center;
+}
+.footer >p{
+  font-size: 18px;
+}
+.footer{
+  gap: 15px;
+}
+.footer button{
+  height: max-content;
+  font-size: 14px;
+  padding: 10px;
+}
   .job-top {
     flex-direction: column;
   }
