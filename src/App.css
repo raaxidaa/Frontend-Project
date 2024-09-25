@@ -3303,9 +3303,10 @@
   position: absolute;
   flex-direction: column;
   gap: 20px;
-  z-index: 50;
+  z-index: 99999;
   opacity: 0;
   visibility: hidden;
+
 }
 
 .mobile-links.open {
@@ -3313,7 +3314,19 @@
   opacity: 100;
   visibility: visible;
 }
-
+.mobile-links a{
+  color: var(--Base-Black-100, #222325);
+    font-feature-settings: "liga" off, "clig" off;
+    font-family: "Red Hat Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    list-style: none;
+}
+.mobile-links a.active{
+  color: #e1f073;
+}
 .menu-icon {
   display: none;
   font-size: 24px;
